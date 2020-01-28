@@ -4,19 +4,88 @@
 <head>
     <meta charset="utf-8">
     <title>Barbershop</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="freelancer.min.css" type="text/css">
+    <style>
+        .thumb{padding: 60px 10px; text-align: center; background: #ddd;}
+        .thumb:nth-child(even){background: #eee}
+        h1, h2{margin: 30px 0;}
+        .container-fluid, .container{margin: 50px auto; height: 200px;}
+    </style>
 </head>
 
 <body>
-    <h1>Task Timeline</h1>
-    <p id="date"></p>
-    <ul>
-        <li class="list">Edit the head</li>
-        <li class="list">Edit the body</li>
-        <li>Link to JavaScript</li>
-    </ul>
-    <script src="app.js"></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Barbershop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div style="max-width: 1200; margin: 0 auto; padding: 10px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12 content">
+                    <h3>Content</h3>
+                    <p><strong>Large screens: </strong>8 columns wide</p>
+                    <p><strong>Medium screens: </strong>6 columns wide</p>
+                    <p><strong>Small screens: </strong>12 columns wide</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 sidebar">
+                    <h3>Sidebar</h3>
+                    <p><strong>Large screens: </strong>4 columns wide</p>
+                    <p><strong>Medium screens: </strong>6 columns wide</p>
+                    <p><strong>Small screens: </strong>12 columns wide</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" app.js "></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
 </body>
 
 </html>

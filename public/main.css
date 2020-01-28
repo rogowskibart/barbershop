@@ -1,7 +1,8 @@
 body {
-    font-family: helvetica;
+    padding-top: 5rem;
 }
 
-ul {
-    font-family: monospace;
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
